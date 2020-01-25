@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Disabled</key>
+	<false/>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>PATH</key>
+		<string>/bin:/usr/bin:/usr/local/bin:/usr/local/opt/clamav/bin:/usr/local/opt/terminal-notifier/bin</string>
+	</dict>
+	<key>Label</key>
+	<string>local.clamscan</string>
+	<key>LowPriorityBackgroundIO</key>
+	<true/>
+	<key>LowPriorityIO</key>
+	<true/>
+	<key>Nice</key>
+	<integer>0</integer>
+	<key>ProcessType</key>
+	<string>Background</string>
+	<key>Program</key>
+	<string>/usr/local/etc/clamav/clamscan.sh</string>
+	<key>StandardErrorPath</key>
+	<string>/usr/local/etc/clamav/clamscan.log</string>
+	<key>StandardOutPath</key>
+	<string>/usr/local/etc/clamav/clamscan.log</string>
+	<key>StartCalendarInterval</key>
+	<array>
+		<dict>
+			<key>Weekday</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>Weekday</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>Weekday</key>
+			<integer>5</integer>
+		</dict>
+	</array>
+</dict>
+</plist>
